@@ -1,0 +1,28 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  port: 5432
+  timeout: 5000
+  min_messages: warning
+  username: rails
+  pool: 50
+
+development:
+  adapter: postgresql
+  min_messages: warning
+  encoding: unicode
+  database: new_app
+  host: localhost
+  pool: 50
+  username: postgres
+  password: root
+
+test:
+  adapter: postgresql
+  min_messages: warning
+  encoding: unicode
+  database: new_app
+  host: localhost
+  pool: 20
+  username: postgres
+  password: root
