@@ -20,7 +20,7 @@
 //= require fancybox/jquery.fancybox-buttons.js
 //= require fancybox/jquery.fancybox-media.js
 //= require fancybox/jquery.fancybox-thumbs.js
-//= require_tree .
+
 
 
 
