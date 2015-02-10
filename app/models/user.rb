@@ -5,5 +5,10 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
     has_many :images
-    accepts_nested_attributes_for :images, :allow_destroy => true    
+    accepts_nested_attributes_for :images, :allow_destroy => true
+
+
+    def funky_method  
+     "#{self.email}"  
+    end
 end

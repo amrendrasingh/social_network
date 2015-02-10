@@ -12,7 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
+//= require autocomplete-rails
+//= require fancybox/jquery.mousewheel-3.0.6.pack.js
+//= require fancybox/jquery.fancybox.pack.js
+//= require fancybox/jquery.fancybox-buttons.js
+//= require fancybox/jquery.fancybox-media.js
+//= require fancybox/jquery.fancybox-thumbs.js
 //= require_tree .
+
 
 

@@ -1,7 +1,29 @@
-
-<div class='container' style="margin-top:100px;">
-	<%= @images.each do |image| %>
-	
-		<%= image_tag (image.photo) %>
+<div  style="margin-top:100px;">
+	<%= @images.map do |image| %>
+  	<a class="fancybox" href="<%=image.photo.url%>" data-fancybox-group="iframe"  rel ="group" title="<%=image.photo_file_name %> ">
+ 		<%=image_tag image.photo.url(:medium), size: "100x100"%>
+ 	  </a>
 	<% end %>
 </div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+ $("a.fancybox").fancybox({
+     maxWidth  : 800,
+    maxHeight : 600,
+    fitToView : false,
+    width   : '50%',
+    height    : '25%',
+    autoSize  : false,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none',
+    scrolling : 'no'
+});
+  
+  
+});
+</script>
+
+

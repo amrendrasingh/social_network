@@ -16,7 +16,7 @@ class ImagesController < ApplicationController
   end
 
   def show
-  	@images = current_user.images
+    @images = current_user.images
   end
 
 

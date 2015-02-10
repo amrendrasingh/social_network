@@ -45,6 +45,7 @@ Rails.application.routes.draw do
     member do
       get "my_calendar"
     end
+    get :autocomplete_brand_name, :on => :collection
   end
   resources :images
   # Example resource route with more complex sub-resources:
